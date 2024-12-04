@@ -28,3 +28,6 @@ For some shortcuts to work, some code needs to be uncommented in specific files.
 (main.py line 679\) Press the key ‘-’ to instantly kill enemies while playing the game (although each enemy kill wouldn’t give you any points, this hack functions as a way to skip waves)  
 (main.py line 665\) Press the key ‘p’ in the shop to gain an additional 100 points  
 (main.py line 738\) Press the key ‘=’ while playing the game to fully max out the awakening bar  
+
+LINK TO DEMO VIDEO:
+https://youtu.be/St30X2-RtmU
