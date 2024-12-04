@@ -23,7 +23,7 @@ Press ‘left’ arrow and/or ‘right’ arrow to cycle through different image
 Press ‘enter’ to confirm selection where prompted
 
 SHORTCUTS:  
-For some shortcuts to work, some code needs to be uncommented in specific files to make the game balanced.
+For some shortcuts to work, some code needs to be uncommented in specific files. Some of these shortcuts were already commented out to make the game balanced and fair.
 
 (main.py line 679\) Press the key ‘-’ to instantly kill enemies while playing the game (although each enemy kill wouldn’t give you any points, this hack functions as a way to skip waves)  
 (main.py line 665\) Press the key ‘p’ in the shop to gain an additional 100 points  
