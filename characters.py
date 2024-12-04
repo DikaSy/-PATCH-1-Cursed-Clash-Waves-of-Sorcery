@@ -27,7 +27,7 @@ class Player:
         # Sets the awakening, dimensions, speed, special ability unlocked,
         # and the current move performed
         self.awakeningLen, self.width, self.height = 0, 50, 50
-        self.performingMove, self.speed, self.specialUnlocked = None, 5, True
+        self.performingMove, self.speed, self.specialUnlocked = None, 5, False
         
         # Sets the regeneration cooldowns
         self.hpRegenCD, self.energyRegenCD = 60, 15

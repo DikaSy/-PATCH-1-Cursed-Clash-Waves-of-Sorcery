@@ -60,7 +60,7 @@ def startGame(app):
     if app.charaSelectIndex == 3: app.player = Megumi()
     if app.charaSelectIndex == 4: app.player = Yuji()
     # Initializes the moves they have, their next move, current wave, and points
-    app.unlockedMove = {1, 2, 3, 4, 5, 6, 7, 8, 'awakening'}
+    app.unlockedMove = {1}
     app.nextMove = 2
     app.currentWave = 0
     app.points = 0
@@ -662,9 +662,9 @@ def onKeyPress(app, key):
             app.playingGame = True
             index = random.randint(0, 3)
             soundReset(app, app.battleSounds[index], True, True)
-        # A hack for points
-        if key in 'pP':
-            app.points += 100
+        ### A HACK FOR POINTS ###
+#         if key in 'pP':
+#             app.points += 100
     
     if app.tutorialMenu:
         # Changes the image index in the tutorial menu
@@ -676,8 +676,8 @@ def onKeyPress(app, key):
             app.mainMenu = True
     
     if app.playingGame and not app.gameOver and not app.cutscene:
-        # A hack to instantly kill enemies
-#         if key in 'kK':
+        ### A HACK TO INSTANTLY KILL ENEMIES ###
+#         if key == '-':
 #             Enemy.enemyList = []
         # Allows users to select a move if the player is not stunned, the game
         # isn't paused, and no domain clashes are triggered
@@ -735,9 +735,9 @@ def onKeyPress(app, key):
             if key in 'gG' and 'awakening' in app.unlockedMove and\
                app.player.awakeningBar == app.player.maxAwakeningBar:
                 app.player.awaken(app)
-            # A hack for getting awakening bar
-            if '=' == key:
-                app.player.awakeningBar += 5000
+            # A HACK FOR GETTING AWAKENING BAR
+#             if '=' == key:
+#                 app.player.awakeningBar += 5000
         elif app.domainClashKeys != "":
             # If user presses keys corresponding to the zero-th index of domain
             # clash keys, slice the list starting from the first index
